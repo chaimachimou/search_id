@@ -7,9 +7,9 @@ import hashlib
 import time
 
 # Define API credentials
-app_key = "26737313"
-app_secret = "VMCICEDXszmI4z8bYSlm"
-base_url = "http://127.0.0.1:9016/artemis/api/resource/v1/person/advance/personList"
+app_key = ""
+app_secret = ""
+base_url = ""
 
 # Generate a timestamp
 timestamp = str(int(time.time() * 1000))  # Current timestamp in milliseconds
@@ -24,7 +24,7 @@ payload = {
 
 # String to sign for API authentication
 # This should be based on your specific API requirements
-string_to_sign = f"POST\n*/*\napplication/json\n/artemis/api/resource/v1/person/advance/personList"
+string_to_sign = f"POST\n*/*\napplication/json\n/"
 
 # Generate the x-ca-signature (HMAC-SHA256)
 signature = hmac.new(
